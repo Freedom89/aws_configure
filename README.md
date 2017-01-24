@@ -5,6 +5,10 @@ My scripts to install softwares on amazon Ec2
 git 
 
 ```
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+  
 function gitbackup() {
   temp=$(pwd)
   git add .;

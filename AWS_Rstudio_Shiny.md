@@ -11,13 +11,19 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install build-essential
 
-#prompt, enter 'Yes' for the codes below
+```
+Run the following line by line:
+
+```
 sudo apt-get install r-base 
 
 sudo apt-get install gdebi-core 
+
 wget https://download2.rstudio.org/rstudio-server-1.0.44-amd64.deb
+
 sudo gdebi rstudio-server-1.0.44-amd64.deb
 ```
+
 #### Configure Port of R-Studio 
 
 ```
@@ -27,11 +33,8 @@ sudo bash -c 'echo "www-port=8080" >> rserver.conf'
 
 ```
 
-```
-#restart rstudio
-sudo restart rstudio-server
-
-```
+Access your Rstudio at `IP-address:8080`. (Ignore HTTPS)
+ 
 
 #### Managing users
 ```
